@@ -1,9 +1,12 @@
 import React from 'react';
+import Gallery from '../Gallery/Gallery';
+import Slider from '../Slider/Slider';
 
 const Home = () => {
     return (
         <div>
-          <h2>Home</h2>  
+          <Slider></Slider> 
+          <Gallery></Gallery>
         </div>
     );
 };

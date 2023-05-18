@@ -3,11 +3,12 @@ import React from "react";
 const Slider = () => {
   return (
     <div>
-      <div className="carousel w-full">
+      <div className="carousel w-full h-[650px] bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] "> 
+        <h3>Your cars</h3>
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-            className="w-full"
+            src="https://pngimg.com/d/camaro_PNG17.png"
+            className="w-5/6 mx-auto"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">
@@ -20,7 +21,7 @@ const Slider = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            src="https://purepng.com/public/uploads/large/purepng.com-chevrolet-camaro-black-carcarcarsvehiclevehiclestransport-561521126664dkdbq.png"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -34,8 +35,8 @@ const Slider = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
-            className="w-full"
+            src="https://pngimg.com/d/camaro_PNG19.png"
+            className="w-5/6 mx-auto"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-circle">
@@ -48,7 +49,7 @@ const Slider = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            src="https://pngimg.com/d/camaro_PNG17.png"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
