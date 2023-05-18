@@ -4,7 +4,8 @@ import logo from '../../../assets/logo.png'
 const NavBar = () => {
 const navItems = <>
     <li> <Link to='/'>Home</Link> </li>
-      <li> <Link to='/about'>About</Link> </li>
+      <li> <Link to='/about'>All Toys</Link> </li>
+      <li> <Link to='/about'>My Toys</Link> </li>
       <li> <Link to='/about'>Blog</Link> </li>
       <li> <Link to='/login'>Login</Link> </li>
 </>
@@ -46,7 +47,7 @@ const navItems = <>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-outline btn-secondary text-xl font-bold">Four Wheelers</a>
+          <a className="btn btn-outline text-xl font-bold">Four Wheelers</a>
         </div>
       </div>
     </div>
