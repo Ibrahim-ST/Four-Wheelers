@@ -1,18 +1,74 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import logo from '../../../assets/logo.png'
+import logo from "../../../assets/logo.png";
+import { AuthContext } from "../../../providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const NavBar = () => {
-const navItems = <>
-    <li> <Link to='/'>Home</Link> </li>
-      <li> <Link to='/about'>All Toys</Link> </li>
-      <li> <Link to='/about'>My Toys</Link> </li>
-      <li> <Link to='/about'>Blog</Link> </li>
-      <li> <Link to='/login'>Login</Link> </li>
-</>
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user?.photoURL);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        toast("Logged out!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  const navItems = (
+    <>
+      <li>
+        {" "}
+        <Link to="/">Home</Link>{" "}
+      </li>
+      <li>
+        {" "}
+        <Link to="/about">All Toys</Link>{" "}
+      </li>
+      <li>
+        {" "}
+        <Link to="/about">Blog</Link>{" "}
+      </li>
+      {user ? (
+        <>
+          <li>
+            {" "}
+            <Link to="/login" onClick={handleLogOut}>
+              Logout
+            </Link>{" "}
+          </li>
+          <li>
+            {" "}
+            <Link to="/about">My Toys</Link>{" "}
+          </li>{" "}
+          <li>
+            {" "}
+            <Link to="/about">Add a Toy</Link>{" "}
+          </li>{" "}
+        </>
+      ) : (
+        <li>
+          {" "}
+          <Link to="/login">Login</Link>{" "}
+        </li>
+      )}
+    </>
+  );
 
   return (
     <div>
-      <div className="navbar bg-base-300">
+      <div className="navbar bg-base-300 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,18 +94,36 @@ const navItems = <>
               {navItems}
             </ul>
           </div>
-          <img src={logo} className='w-20 hidden md:block' alt="" />
-           
+          <img src={logo} className="w-20 hidden md:block" alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {navItems}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navItems}</ul>
+          {user && (
+            <div className="tooltip tooltip-bottom" data-tip={user?.displayName || user?.email}>
+              <img
+                src={user?.photoURL}
+                alt=""
+                className="w-12 rounded-full  "
+              />
+            </div>
+          )}
         </div>
         <div className="navbar-end">
           <a className="btn btn-outline text-xl font-bold">Four Wheelers</a>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 };
