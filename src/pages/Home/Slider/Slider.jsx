@@ -3,7 +3,7 @@ import React from "react";
 const Slider = () => {
   return (
     <div>
-      <div className="carousel w-full h-[650px] bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] "> 
+      <div className="carousel w-full h-[650px] bg-slate-900 "> 
         <h3>Your cars</h3>
         <div id="slide1" className="carousel-item relative w-full">
           <img

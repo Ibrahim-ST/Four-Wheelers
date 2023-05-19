@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "1",
+    "name": "Ford Raptor",
+    "price": 10.99,
+    "rating": 4.5,
+    "picture": "https://cdn.rebrickable.com/media/thumbs/mocs/moc-103875.jpg/1000x800.jpg",
+    "sub-category": "Truck",
+    "quantity": 10,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "_id": "2",
+    "name": "Police Truck",
+    "price": 19.99,
+    "rating": 3.8,
+    "picture": "https://www.lego.com/cdn/cs/set/assets/bltfde3f0fa9df22a11/60312_Block_Standard_1.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+    "sub-category": "Truck",
+    "quantity": 5,
+    "description": "Ut euismod ultrices nibh vitae consequat. Sed ut lacinia lectus."
+  },
+  {
+    "_id": "3",
+    "name": "Chevrolet Camaro",
+    "price": 7.99,
+    "rating": 4.2,
+    "picture": "https://pngimg.com/d/camaro_PNG17.png",
+    "sub-category": "Car",
+    "quantity": 15,
+    "description": "Vivamus non turpis id nisl dignissim euismod. Aliquam id feugiat enim."
+  },
+  {
+    "_id": "4",
+    "name": "Chevrolet Camaro 2022",
+    "price": 7.99,
+    "rating": 4.2,
+    "picture": "https://purepng.com/public/uploads/large/purepng.com-chevrolet-camarochevychevroletamerican-automobilechevrolet-camaro-1701527424307yfbn0.png",
+    "sub-category": "Car",
+    "quantity": 15,
+    "description": "Vivamus non turpis id nisl dignissim euismod. Aliquam id feugiat enim."
+  },
+  {
+    "_id": "5",
+    "name": "Jeep Wrangler",
+    "price": 7.99,
+    "rating": 4.2,
+    "picture": "https://www.onlineauto.com.au/contentAsset/image/df1045a1-bc19-4159-9b8a-3ca4ed31a0da",
+    "sub-category": "Jeep",
+    "quantity": 15,
+    "description": "Vivamus non turpis id nisl dignissim euismod. Aliquam id feugiat enim."
+  },
+  {
+    "_id": "6",
+    "name": "Jeep Wrangler Rubicon",
+    "price": 7.99,
+    "rating": 4.2,
+    "picture": "https://m.media-amazon.com/images/I/61HQpvMbmHL._SL1200_.jpg",
+    "sub-category": "Jeep",
+    "quantity": 15,
+    "description": "Vivamus non turpis id nisl dignissim euismod. Aliquam id feugiat enim."
+  }
+]
