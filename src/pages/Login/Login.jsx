@@ -45,6 +45,18 @@ const Login = () => {
                 theme: "dark",
               });
           }
+          else if (errMsg.includes("auth/user-not-found")){
+            toast("User not found", {
+              position: "top-center",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+            });
+          }
       });
   };
   return (
@@ -85,7 +97,7 @@ const Login = () => {
               </div>
               <label className="label">
                 <Link to='/signup' className="label-text-alt link link-hover">
-                  Already Registered? Login
+                  New to Four Wheelers? Register
                 </Link>
               </label>
             </div>

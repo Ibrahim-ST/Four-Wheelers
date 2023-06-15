@@ -34,11 +34,11 @@ const NavBar = () => {
       </li>
       <li>
         {" "}
-        <Link to="/about">All Toys</Link>{" "}
+        <Link to="/">All Toys</Link>{" "}
       </li>
       <li>
         {" "}
-        <Link to="/about">Blog</Link>{" "}
+        <Link to="/blog">Blog</Link>{" "}
       </li>
       {user ? (
         <>
@@ -50,11 +50,11 @@ const NavBar = () => {
           </li>
           <li>
             {" "}
-            <Link to="/about">My Toys</Link>{" "}
+            <Link to="/">My Toys</Link>{" "}
           </li>{" "}
           <li>
             {" "}
-            <Link to="/about">Add a Toy</Link>{" "}
+            <Link to="/">Add a Toy</Link>{" "}
           </li>{" "}
         </>
       ) : (
@@ -68,7 +68,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-300 rounded-lg">
+      <div className="navbar  rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
