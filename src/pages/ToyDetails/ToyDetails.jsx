@@ -1,3 +1,4 @@
+import { Rating, ThinStar  } from "@smastrom/react-rating";
 import React, { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 const ToyDetails = () => {
@@ -14,6 +15,12 @@ const ToyDetails = () => {
     description,
   } = toy;
 
+  const myStyles = {
+    itemShapes: ThinStar,
+    activeFillColor: '#ffb700',
+    inactiveFillColor: '#fbf1a9'
+  }
+
   return (
     <div className="w-1/2 mx-auto">
       <div className="w-full max-w-xl bg-white border border-gray-200 rounded-lg shadow">
@@ -25,11 +32,13 @@ const ToyDetails = () => {
           </h5>
           <div className="flex justify-between">
           <p><span className="font-bold">Seller</span>: {seller}</p>
-          <p><span className="font-bold">Seller Email</span>: {email}</p>
-          
+          <p><span className="font-bold">Seller Email</span>: {email}</p>         
 
           </div>
           <p><span className="font-bold">Quantity</span>: {quantity}</p>
+          <p className="flex"><span className="font-bold">Rating</span>: 
+          <Rating style={{ maxWidth: 100 }} value={rating}  itemStyles={myStyles} readOnly />
+          </p>    
           <p><span className="font-bold">Product Description</span>: {description}</p>
   
           <p className="text-3xl"><span className="font-bold ">Price</span>: ${price}</p>
