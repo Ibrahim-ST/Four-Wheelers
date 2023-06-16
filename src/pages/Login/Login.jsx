@@ -1,12 +1,16 @@
 import { ToastContainer, toast } from "react-toastify";
 
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
    
   const handleLogin = (event) => {
     event.preventDefault();
@@ -29,6 +33,8 @@ const Login = () => {
             progress: undefined,
             theme: "dark",
           });
+          navigate(from, { replace: true });
+
       })
       .catch((error) => {
         console.log(error);

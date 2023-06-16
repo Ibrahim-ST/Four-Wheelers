@@ -1,12 +1,14 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
+import AddToy from "../pages/AddToy/AddToy";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
 import Blog from "../pages/Shared/Blog/Blog";
 import SignUp from "../pages/SignUp/SignUp";
 import ToyDetails from "../pages/ToyDetails/ToyDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -30,8 +32,12 @@ const router = createBrowserRouter([
         element: <SignUp></SignUp>
       },
       {
+        path: '/addToy',
+        element: <PrivateRoute><AddToy></AddToy></PrivateRoute>
+      },
+      {
         path: '/toys/:id',
-        element: <ToyDetails></ToyDetails>,
+        element:<PrivateRoute><ToyDetails></ToyDetails></PrivateRoute> ,
         loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
       }
     ],
