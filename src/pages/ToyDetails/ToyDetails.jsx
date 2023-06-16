@@ -42,7 +42,9 @@ const ToyDetails = () => {
           <p><span className="font-bold">Product Description</span>: {description}</p>
   
           <p className="text-3xl"><span className="font-bold ">Price</span>: ${price}</p>
+          <div className="text-center">
           <button className="btn btn-outline border-b-4 border-0 border-red-500 bg-[#161661] text-white">BUY NOW</button>
+          </div>
         </div>
       </div>
     </div>

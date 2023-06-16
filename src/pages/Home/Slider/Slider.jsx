@@ -8,7 +8,7 @@ const Slider = () => {
         <div id="slide1" className="carousel-item relative w-full">
           <img
             src="https://pngimg.com/d/camaro_PNG17.png"
-            className="w-5/6 mx-auto h-screen"
+            className="object-contain md:w-5/6 mx-auto h-screen"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">
@@ -22,7 +22,7 @@ const Slider = () => {
         <div id="slide2" className="carousel-item relative w-full">
           <img
             src="https://purepng.com/public/uploads/large/purepng.com-chevrolet-camaro-black-carcarcarsvehiclevehiclestransport-561521126664dkdbq.png"
-            className="w-full"
+            className="object-contain md:w-5/6 mx-auto h-screen"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">
@@ -36,7 +36,7 @@ const Slider = () => {
         <div id="slide3" className="carousel-item relative w-full">
           <img
             src="https://pngimg.com/d/camaro_PNG19.png"
-            className="w-5/6 mx-auto"
+            className="object-contain md:w-5/6 mx-auto h-screen"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-circle">
@@ -50,7 +50,7 @@ const Slider = () => {
         <div id="slide4" className="carousel-item relative w-full">
           <img
             src="https://pngimg.com/d/camaro_PNG17.png"
-            className="w-full"
+            className="object-contain md:w-5/6 mx-auto h-screen"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" className="btn btn-circle">
