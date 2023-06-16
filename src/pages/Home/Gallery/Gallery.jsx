@@ -2,10 +2,15 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <div className="my-12 mx-4">
+    <>
+    <div className="my-12 mx-8">
       <h2 className="text-6xl font-extrabold text-black my-4 text-center">
         Featured Collection
       </h2>
+      <p className="w-2/3 mx-auto my-4 text-gray-600 text-justify">
+  Immerse yourself in the world of our featured collection, where imagination meets adventure. Discover a captivating assortment of hand-picked toys that will ignite the imagination of children and adults alike. From futuristic spaceships to majestic castles, our collection transports you to enchanted realms and empowers you to create your own extraordinary stories.
+</p>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="bg-slate-200 rounded flex items-center">
           <img
@@ -75,6 +80,12 @@ const Gallery = () => {
         </div>
       </div>
     </div>
+
+
+ 
+
+    </>
+
   );
 };
 

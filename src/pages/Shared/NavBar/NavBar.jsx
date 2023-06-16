@@ -41,13 +41,7 @@ const NavBar = () => {
         <Link to="/blog">Blog</Link>{" "}
       </li>
       {user ? (
-        <>
-          <li>
-            {" "}
-            <Link to="/login" onClick={handleLogOut}>
-              Logout
-            </Link>{" "}
-          </li>
+        <>          
           <li>
             {" "}
             <Link to="/">My Toys</Link>{" "}
@@ -56,6 +50,12 @@ const NavBar = () => {
             {" "}
             <Link to="/addToy">Add a Toy</Link>{" "}
           </li>{" "}
+          <li>
+            {" "}
+            <Link to="/login" onClick={handleLogOut}>
+              Logout
+            </Link>{" "}
+          </li>
         </>
       ) : (
         <li>

@@ -8,7 +8,7 @@ const Slider = () => {
         <div id="slide1" className="carousel-item relative w-full">
           <img
             src="https://pngimg.com/d/camaro_PNG17.png"
-            className="w-5/6 mx-auto"
+            className="w-5/6 mx-auto h-screen"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">
