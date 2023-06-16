@@ -1,3 +1,5 @@
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 import React from "react";
 import logo from "../../../assets/logo.png";
 const Footer = () => {
@@ -13,18 +15,25 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <span className="footer-title">Services</span>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <span className="footer-title">QUICK LINKS</span>
+          <a href="/alltoys" className="link link-hover">All Toys</a>
+          <a href="/addtoy" className="link link-hover">Add Toy</a>
+          <a href="/blog" className="link link-hover">Blogs</a>
+          <a href="/" className="link link-hover">Home</a>
         </div>
         <div>
           <span className="footer-title">Company</span>
           <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <a className="link link-hover">Contact</a> 
+          <h3 className="footer-title mb-0">Social Links</h3>
+          <div className="flex gap-4">
+                <a href="https://www.facebook.com/ibrahim.siddiqueee"><FaFacebook  className="text-[#82D135]" size={30}/>
+                </a>
+                <a href="https://www.linkedin.com/in/ibrahim-siddiqueee/"><FaLinkedin className="text-[#82D135]" size={30}/>
+                </a>
+                <a href="https://github.com/Ibrahim-ST"><FaGithub className="text-[#82D135]" size={30}/>
+                </a>
+              </div>
         </div>
         <div>
           <span className="footer-title">Newsletter</span>

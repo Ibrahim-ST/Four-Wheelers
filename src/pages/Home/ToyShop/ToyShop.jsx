@@ -21,8 +21,8 @@ const ToyShop = () => {
   console.log(truck);
   return (
     <div>
-      <h5 className="mb-2 text-center text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Popular Toys
+      <h5 className="mb-2 text-center text-5xl font-extrabold tracking-tight text-gray-900 uppercase">
+        Shop By Category
       </h5>
       <p className="w-2/3 mx-auto my-4 text-gray-600 text-justify">
         Rev up the excitement with our collection of popular car toys. From

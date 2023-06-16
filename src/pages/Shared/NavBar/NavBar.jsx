@@ -103,7 +103,7 @@ const NavBar = () => {
               <img
                 src={user?.photoURL}
                 alt=""
-                className="w-12 rounded-full  "
+                className="h-12 w-12 rounded-full  "
               />
             </div>
           )}

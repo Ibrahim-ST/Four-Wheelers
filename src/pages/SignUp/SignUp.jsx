@@ -1,11 +1,11 @@
 import { ToastContainer, toast } from "react-toastify";
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
-  const { createUser, updateUser } = useContext(AuthContext);
-   
+  const { createUser, updateUser, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSignUp = (event) => {
     event.preventDefault();
@@ -50,6 +50,10 @@ const SignUp = () => {
         })
           .then(() => {
             console.log("user name updated");
+            logOut()
+            .then(() => {
+              navigate("/login");
+            }); 
           })
           .catch((error) => {
             console.log('this',error);

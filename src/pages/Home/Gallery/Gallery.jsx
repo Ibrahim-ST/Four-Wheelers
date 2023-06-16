@@ -4,7 +4,7 @@ const Gallery = () => {
   return (
     <>
     <div className="my-12 mx-8">
-      <h2 className="text-6xl font-extrabold text-black my-4 text-center">
+      <h2 className="text-5xl uppercase font-extrabold text-black my-4 text-center">
         Featured Collection
       </h2>
       <p className="w-2/3 mx-auto my-4 text-gray-600 text-justify">
