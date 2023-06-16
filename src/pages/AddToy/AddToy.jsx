@@ -21,6 +21,7 @@ const AddToy = () => {
     .then(res => res.json())
     .then(data => {
         console.log(data)
+        reset();
         if(data.insertedId){
             Swal.fire({
                 position: 'top-center',
@@ -53,7 +54,7 @@ const AddToy = () => {
           <input
             type="text"
             placeholder="Toy Image"
-            {...register("photoURL", { required: true, maxLength: 120 })}
+            {...register("photoURL", { required: true, maxLength: 520 })}
             className="input input-bordered w-full "
           />
         </div>
@@ -134,7 +135,7 @@ const AddToy = () => {
             </label>
             <input
               type="text"
-              {...register("available_seat", { required: true })}
+              {...register("rating", { required: true })}
               placeholder="Type here"
               className="input input-bordered w-full "
             />
@@ -144,7 +145,7 @@ const AddToy = () => {
               <span className="label-text font-semibold">Price*</span>
             </label>
             <input
-              type="number"
+              type="text"
               {...register("price", { required: true })}
               placeholder="Type here"
               className="input input-bordered w-full "
