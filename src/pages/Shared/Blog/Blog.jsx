@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000">
       <Helmet>
         <title>Blog | Four Wheelers</title>
       </Helmet>

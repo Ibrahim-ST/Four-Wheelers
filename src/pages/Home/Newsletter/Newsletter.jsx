@@ -2,7 +2,8 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div>
+    <div  data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000">
       <section class="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
           <a 

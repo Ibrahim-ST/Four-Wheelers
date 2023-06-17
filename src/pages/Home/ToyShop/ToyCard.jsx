@@ -13,7 +13,8 @@ const ToyCard = ({toy}) => {
   return (
     <div>         
       <div className="card w-96 bg-base-300 shadow-xl">
-        <figure className="px-10 pt-10">
+        <figure className="px-10 pt-10" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+    data-aos-duration="700">
           <img src={photoURL} alt="Shoes" className="rounded-xl h-44" />
         </figure>
         <div className="card-body ">

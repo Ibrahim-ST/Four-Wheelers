@@ -12,7 +12,8 @@ const AllToys = () => {
   }, []);
   console.log(toys);
   return (
-    <>
+    <div data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
+    data-aos-duration="1500">
       <Helmet>
         <title>All Toys | Four Wheelers</title>
       </Helmet>
@@ -69,7 +70,7 @@ const AllToys = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

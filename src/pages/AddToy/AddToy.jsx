@@ -39,7 +39,8 @@ const AddToy = () => {
     <Helmet>
             <title>Add Toy | Four Wheelers</title>
     </Helmet>
-    <div className="w-full px-10">
+    <div className="w-full px-10" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control w-full mb-4">
           <label className="label">

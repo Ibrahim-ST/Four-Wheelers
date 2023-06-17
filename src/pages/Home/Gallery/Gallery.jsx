@@ -3,7 +3,7 @@ import React from "react";
 const Gallery = () => {
   return (
     <>
-    <div className="my-12 mx-8">
+    <div className="my-12 mx-8"  data-aos="fade-up">
       <h2 className="text-5xl uppercase font-extrabold text-black my-4 text-center">
         Featured Collection
       </h2>
