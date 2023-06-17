@@ -52,7 +52,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/alltoys/${params.id}`),
+          fetch(`https://four-wheelers-server.vercel.app/alltoys/${params.id}`),
       },
 
       {
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/toys/${params.id}`),
+          fetch(`https://four-wheelers-server.vercel.app/toys/${params.id}`),
       },
     ],
     errorElement: <ErrorPage></ErrorPage>,

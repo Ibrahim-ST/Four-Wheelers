@@ -1,5 +1,6 @@
 import { Rating, ThinStar  } from "@smastrom/react-rating";
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 const ToyDetails = () => {
   const toy = useLoaderData();
@@ -22,6 +23,10 @@ const ToyDetails = () => {
   }
 
   return (
+    <>
+    <Helmet>
+        <title>{name} Details</title>
+    </Helmet>
     <div className="w-1/2 mx-auto">
       <div className="w-full max-w-xl bg-white border border-gray-200 rounded-lg shadow">
         <img className="rounded-t-lg" src={photoURL} alt="product image" />
@@ -47,7 +52,7 @@ const ToyDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 

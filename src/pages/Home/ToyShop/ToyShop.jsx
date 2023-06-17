@@ -10,7 +10,7 @@ const ToyShop = () => {
   const [toys, setToys] = useState([]); 
 
   useEffect(() => {
-    fetch("http://localhost:5000/alltoys")
+    fetch("https://four-wheelers-server.vercel.app/alltoys")
       .then((res) => res.json())
       .then((data) => setToys(data));
   }, []);
@@ -32,14 +32,14 @@ const ToyShop = () => {
         conquering imaginary tracks and exploring imaginary worlds.
       </p>
       <Tabs>
-        <div className="text-center">
+        <span className="text-center">
         <TabList>
           <Tab>All</Tab>
           <Tab>Car</Tab>
           <Tab>Jeep</Tab>
           <Tab>Truck</Tab>
         </TabList>
-        </div>
+        </span>
 
         <TabPanel>
           <ToyTab items={toys}></ToyTab>

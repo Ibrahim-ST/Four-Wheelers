@@ -1,5 +1,6 @@
 import React from "react";
 import { useContext } from "react";
+import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -11,7 +12,7 @@ const AddToy = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    fetch('http://localhost:5000/addtoy',{
+    fetch('https://four-wheelers-server.vercel.app/addtoy',{
         method: 'POST',
         headers: {
             'content-type' : 'application/json'
@@ -34,6 +35,10 @@ const AddToy = () => {
     })
   };
   return (
+    <>
+    <Helmet>
+            <title>Add Toy | Four Wheelers</title>
+    </Helmet>
     <div className="w-full px-10">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control w-full mb-4">
@@ -162,6 +167,8 @@ const AddToy = () => {
         </div>
       </form>
     </div>
+    </>
+
   );
 };
 
