@@ -44,7 +44,7 @@ const NavBar = () => {
         <>          
           <li>
             {" "}
-            <Link to="/">My Toys</Link>{" "}
+            <Link to="/alltoys">My Toys</Link>{" "}
           </li>{" "}
           <li>
             {" "}

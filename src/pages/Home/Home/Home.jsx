@@ -4,6 +4,7 @@ import Newsletter from '../Newsletter/Newsletter';
 import Slider from '../Slider/Slider';
 import ToyShop from '../ToyShop/ToyShop';
 import { Helmet } from 'react-helmet-async';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
           <Gallery></Gallery>
           <ToyShop></ToyShop>
           <Newsletter></Newsletter>
+          <Testimonial></Testimonial>
         </div>
     );
 };
